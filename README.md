@@ -7,4 +7,4 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 
 ---
 
-
+* [candle-based](./based/README.md)
