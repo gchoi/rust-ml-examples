@@ -154,22 +154,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
 
 [[package]]
-name = "beit"
-version = "0.1.0"
-dependencies = [
- "accelerate-src",
- "anyhow",
- "bindgen_cuda",
- "candle-core",
- "candle-examples",
- "candle-nn",
- "candle-transformers",
- "clap",
- "hf-hub",
- "image",
-]
-
-[[package]]
 name = "bindgen_cuda"
 version = "0.1.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -250,6 +234,22 @@ name = "bytes"
 version = "1.10.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d71b6127be86fdcfddb610f7182ac57211d4b18a3e9c82eb2d17662f2227ad6a"
+
+[[package]]
+name = "candle-beit"
+version = "0.1.0"
+dependencies = [
+ "accelerate-src",
+ "anyhow",
+ "bindgen_cuda",
+ "candle-core",
+ "candle-examples",
+ "candle-nn",
+ "candle-transformers",
+ "clap",
+ "hf-hub",
+ "image",
+]
 
 [[package]]
 name = "candle-core"

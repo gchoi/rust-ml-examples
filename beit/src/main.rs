@@ -3,9 +3,6 @@
 
 mod build;
 
-#[cfg(feature = "accelerate")]
-extern crate accelerate_src;
-
 use clap::Parser;
 
 use candle_core::{DType, Device, IndexOp, Result, Tensor, D};
