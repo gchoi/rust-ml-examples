@@ -4,7 +4,6 @@
 .idea
 .env
 .DS_Store
-*.png
 .venv
 basketball-player-detection-2-13/
 *.pth
