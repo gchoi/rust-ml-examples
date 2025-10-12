@@ -13,3 +13,4 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-bigcode](./candle-bigcode/README.md)
 * [candle-blip](./candle-blip/README.md)
 * [web-serving](./web-serving/README.md)
+* [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)
