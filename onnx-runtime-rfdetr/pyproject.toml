@@ -1,0 +1,15 @@
+[project]
+name = "rfdetr-onnx"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "inference>=0.57.2",
+    "onnx>=1.19.0",
+    "onnx-graphsurgeon>=0.5.8",
+    "onnxruntime>=1.21.1",
+    "rfdetr>=1.2.1",
+    "roboflow>=1.2.9",
+    "supervision>=0.26.1",
+]

@@ -1,0 +1,72 @@
+# Justfile
+
+VENV := ".venv"
+PYTHON_VER := "3.13"
+
+
+# list all tasks
+default:
+  @just --list
+
+# Install uv
+install-uv:
+	curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Set up Python virtual environment
+venv: install-uv
+    #!/usr/bin/env sh
+    if [ "$(uname)" = "Darwin" ] || [ "$(uname)" = "Linux" ]; then
+        echo "Installing virtual env on Darwin or Linux..."
+        uv venv {{ VENV }} --python {{ PYTHON_VER }}
+        . {{ VENV }}/bin/activate && uv sync
+    else
+        echo "Installing virtual env on Windows..."
+        uv venv {{ VENV }} --python {{ PYTHON_VER }}
+        . {{ VENV }}/Scripts/activate && uv sync
+    fi
+
+# download pre-trained onnx model
+download-model:
+    wget https://huggingface.co/onnx-community/rfdetr_base-ONNX/resolve/main/onnx/model.onnx && \
+    mkdir -p assets/models/ && \
+    mv ./model.onnx ./assets/models/model.onnx
+
+# Inference with pre-trained model
+inference-pretrained:
+    . {{ VENV }}/bin/activate && \
+    uv sync && \
+    uv run ./py/01-inference-pretrained.py
+
+# create .env
+create-env:
+    cp ./example.env ./.env
+
+# Download dataset
+donwload-dataset:
+    . {{ VENV }}/bin/activate && \
+    uv sync && \
+    uv run ./py/02-download-dataset.py
+
+# Finetune
+finetune:
+    . {{ VENV }}/bin/activate && \
+    uv sync && \
+    uv run ./py/03-finetune.py
+
+# Evaluate
+evaluate:
+    . {{ VENV }}/bin/activate && \
+    uv sync && \
+    uv run ./py/04-evaluate.py
+
+# Inference with finetuned model
+inference-finetuned:
+    . {{ VENV }}/bin/activate && \
+    uv sync && \
+    uv run ./py/05-inference-finetuned.py
+
+# Export to ONNX file
+export-onnx:
+    . {{ VENV }}/bin/activate && \
+    uv sync && \
+    uv run ./py/06-export-onnx.py

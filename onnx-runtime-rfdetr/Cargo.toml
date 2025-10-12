@@ -1,0 +1,24 @@
+[package]
+name = "rfdetr_onnx"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "rfdetr_onnx_lib"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+image = "0.25.8"
+ort = "1.16.3"
+ndarray = "0.15.6"
+anyhow = "1.0.100"
+imageproc = "0.25.0"
+eframe = "0.32.3"
+egui = "0.32.3"
+rfd = "0.15.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+panic = "abort"
