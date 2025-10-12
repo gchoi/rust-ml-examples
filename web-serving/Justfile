@@ -1,0 +1,3 @@
+# Create .env file from example.env
+create-env:
+    cp example.env .env
