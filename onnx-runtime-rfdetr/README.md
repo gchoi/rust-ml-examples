@@ -8,13 +8,9 @@ detection and provides a simple GUI interface for users to interact with the app
 
 ## Prerequisites
 
----
-
 Installing [Just command runner](https://just.systems) is recommended to easily follow the instructions.
 
 ## Rust - Inference with Pretrained ONNX Model
-
----
 
 ### Download the ONNX model to test with
 
@@ -40,8 +36,6 @@ The application will start and you can interact with it using the GUI.
 
 
 ## Python - Finetune & Export to ONNX Model
-
----
 
 ### Python development environment (virtual environment)
 
@@ -123,8 +117,6 @@ $ just export-onnx
 
 ## Supported Models
 
----
-
 - ✅ **Original base model** (`model.onnx`, 108 MB): fastest
 - ✅ **FP16 model** (`model_fp16.onnx`, 55.2 MB): reducing memory, but slow
 - ❌ **INT8/UINT8 model**: `ConvInteger` NOT supported
@@ -134,8 +126,6 @@ $ just export-onnx
 > In the furture, we will support more models.
 
 ## Project Structure
-
----
 
 ```
 rf_detr_onnx_test/
