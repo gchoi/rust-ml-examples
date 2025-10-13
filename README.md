@@ -8,10 +8,11 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 ---
 
 * [candle-based](./based/README.md)
-* [candle-beit](./candle-beit/README.md)
-* [candle-bert](./candle-bert/README.md)
-* [candle-bigcode](./candle-bigcode/README.md)
-* [candle-blip](./candle-blip/README.md)
+* [candle-beit](./beit/README.md)
+* [candle-bert](./bert/README.md)
+* [candle-bigcode](./bigcode/README.md)
+* [candle-blip](./blip/README.md)
+* [candle-chatglm](./chatglm/README.md)
 * [onnx](./onnx/README.md)
 * [onnx-llm](./onnx-llm/README.md)
 * [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)
