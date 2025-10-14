@@ -57,8 +57,6 @@ $ cargo run --features cuda --release -- \
 > Probability: 0.0000% Text: a robot holding a candle 
 ```
 
-
-
 ## Running on an example with metal feature (mac)
 
 ```bash

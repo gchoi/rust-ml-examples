@@ -15,6 +15,7 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-chatglm](./chatglm/README.md)
 * [candle-chinese_clip](./chinese_clip/README.md)
 * [candle-clip](./clip/README.md)
+* [candle-codegeex4-9b](./codegeex4-9b/README.md)
 * [candle-onnx](./onnx/README.md)
 * [candle-onnx-llm](./onnx-llm/README.md)
 * [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)

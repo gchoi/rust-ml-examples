@@ -1,5 +1,5 @@
 [package]
-name = "candle-clip"
+name = "candle-codegeex4-9b"
 version = "0.1.0"
 edition = "2024"
 
@@ -11,8 +11,8 @@ candle-transformers = { version = "0.9.1", default-features = false }
 candle-examples = { version = "0.9.1", default-features = false }
 clap = { version = "4.5.49", features = ["derive"] }
 hf-hub = { version = "0.4.3" }
-image = { version = "0.25.8", default-features = false, features = ["jpeg", "png"] }
 tokenizers = { version = "0.21.4", features = ["onig"] }
+serde_json = { version = "1.0.145" }
 
 [features]
 # Keep default empty so you control backends explicitly.
