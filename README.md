@@ -20,6 +20,7 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-convmixer](./convmixer/README.md)
 * [candle-convnext](./convnext/README.md)
 * [candle-csm](./csm/README.md)
+* [candle-custom-ops](./custom-ops/README.md)
 * [candle-onnx](./onnx/README.md)
 * [candle-onnx-llm](./onnx-llm/README.md)
 * [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)

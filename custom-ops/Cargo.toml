@@ -1,0 +1,21 @@
+[package]
+name = "candle-custom-ops"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = { version = "1.0.100", features = ["backtrace"] }
+candle-core = { version = "0.9.1", default-features = false }
+candle-nn = { version = "0.9.1", default-features = false }
+candle-transformers = { version = "0.9.1", default-features = false }
+candle-examples = { version = "0.9.1", default-features = false }
+clap = { version = "4.5.45", features = ["derive"] }
+
+[features]
+# Keep default empty so you control backends explicitly.
+default = []
+cuda = [
+    "candle-core/cuda",
+    "candle-nn/cuda",
+    "candle-transformers/cuda",
+]
