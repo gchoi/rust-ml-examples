@@ -85,6 +85,8 @@ impl CustomOp1 for LayerNorm {
 }
 
 fn main() -> anyhow::Result<()> {
+    println!("OUT_DIR: {}", env!("OUT_DIR"));
+
     let args = Args::parse();
     let device = candle_examples::device(args.cpu)?;
     let t = Tensor::arange(0f32, 14f32, &device)?.reshape((2, 7))?;
