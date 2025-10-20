@@ -23,6 +23,7 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-custom-ops](./custom-ops/README.md)
 * [candle-deepseekv2](./deepseekv2/README.md)
 * [candle-depth_anything_v2](./depth_anything_v2/README.md)
+* [candle-dinov2](./dinov2/README.md)
 * [candle-onnx](./onnx/README.md)
 * [candle-onnx-llm](./onnx-llm/README.md)
 * [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)

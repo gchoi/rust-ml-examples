@@ -7,7 +7,17 @@ probability for the image to belong to each of the 1000 ImageNet categories.
 ## Running some example
 
 ```bash
-cargo run --features metal --release -- --image ../assets/bike.jpg
+# CPU
+$ cargo run --release -- \
+  --image ../assets/bike.jpg
+
+# CUDA
+$ cargo run --features cuda --release -- \
+  --image ../assets/bike.jpg
+
+# Metal
+$ cargo run --features metal --release -- \
+  --image ../assets/bike.jpg
 
 > mountain bike, all-terrain bike, off-roader: 43.67%
 > bicycle-built-for-two, tandem bicycle, tandem: 33.20%
