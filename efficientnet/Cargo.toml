@@ -1,0 +1,28 @@
+[package]
+name = "candle-efficientnet"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = { version = "1.0.100", features = ["backtrace"] }
+candle-core = { version = "0.9.1", default-features = false }
+candle-nn = { version = "0.9.1", default-features = false }
+candle-transformers = { version = "0.9.1", default-features = false }
+candle-examples = { version = "0.9.1", default-features = false }
+clap = { version = "4.5.50", features = ["derive"] }
+hf-hub = { version = "0.4.3" }
+
+[features]
+# Keep default empty so you control backends explicitly.
+default = []
+# Forward the local 'metal' feature to the dependencies' 'metal' features.
+metal = [
+    "candle-core/metal",
+    "candle-nn/metal",
+    "candle-transformers/metal",
+]
+cuda = [
+    "candle-core/cuda",
+    "candle-nn/cuda",
+    "candle-transformers/cuda",
+]
