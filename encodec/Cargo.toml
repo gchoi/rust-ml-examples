@@ -1,0 +1,31 @@
+[package]
+name = "candle-encodec"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = { version = "1.0.99", features = ["backtrace"] }
+candle-core = { version = "0.9.1", default-features = false }
+candle-nn = { version = "0.9.1", default-features = false }
+candle-transformers = { version = "0.9.1", default-features = false }
+candle-examples = { version = "0.9.1", default-features = false }
+clap = { version = "4.5.45", features = ["derive"] }
+hf-hub = { version = "0.4.3" }
+rubato = { version = "0.16.2" }
+symphonia = { version = "0.5.4", features = ["all"] }
+cpal = { version = "0.16.0" }
+
+[features]
+# Keep default empty so you control backends explicitly.
+default = []
+# Forward the local 'metal' feature to the dependencies' 'metal' features.
+metal = [
+    "candle-core/metal",
+    "candle-nn/metal",
+    "candle-transformers/metal",
+]
+cuda = [
+    "candle-core/cuda",
+    "candle-nn/cuda",
+    "candle-transformers/cuda",
+]
