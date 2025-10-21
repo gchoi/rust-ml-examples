@@ -29,6 +29,7 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-efficientnet](./efficientnet/README.md)
 * [candle-efficientvit](./efficientvit/README.md)
 * [candle-encodec](./encodec/README.md)
+* [candle-eva2](./eva2/README.md)
 * [candle-onnx](./onnx/README.md)
 * [candle-onnx-llm](./onnx-llm/README.md)
 * [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)
