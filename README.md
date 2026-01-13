@@ -21,6 +21,7 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-convnext](./convnext/README.md)
 * [candle-csm](./csm/README.md)
 * [candle-custom-ops](./custom-ops/README.md)
+* [candle-debertav2](./debertav2/README.md)
 * [candle-deepseekv2](./deepseekv2/README.md)
 * [candle-depth_anything_v2](./depth_anything_v2/README.md)
 * [candle-dinov2](./dinov2/README.md)
