@@ -18,13 +18,13 @@ leave your phone/computer!
 ### Object Detection
 ```bash
 # CPU
-$ cargo run --release -- ../assets/bike.jpg
+$ cargo run --release -- ./assets/bike.jpg
 
 # CUDA
-$ cargo run --release --features cuda -- ../assets/bike.jpg
+$ cargo run --release --features cuda -- ./assets/bike.jpg
 
 # Metal
-$ cargo run --release --features metal -- ../assets/bike.jpg
+$ cargo run --release --features metal -- ./assets/bike.jpg
 ```
 
 This prints details about the detected objects and generates a `bike.pp.jpg` file.
@@ -40,15 +40,15 @@ Image source:
 ```bash
 # CPU
 $ cargo run --release -- \
-  ../assets/bike.jpg --task pose
+  ./assets/bike.jpg --task pose
 
 # CUDA
 $ cargo run --release --features cuda -- \
-  ../assets/bike.jpg --task pose
+  ./assets/bike.jpg --task pose
 
 # Metal
 $ cargo run --release --features metal -- \
-  ../assets/bike.jpg --task pose
+  ./assets/bike.jpg --task pose
 ```
 
 ![Leading group, Giro d'Italia 2021](./assets/bike.pose.jpg)
