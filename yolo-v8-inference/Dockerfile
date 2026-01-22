@@ -14,10 +14,11 @@ RUN cp -r ~/.cache ./.cache
 # ------------------------------------------------
 FROM ubuntu:latest
 
-COPY --from=build /usr/src/assets/ /usr/local/bin/
+COPY ./assets/ /usr/local/bin/assets/
 COPY --from=build /usr/src/target/release/ /usr/local/bin/
-COPY --from=build /usr/src/.cache /usr/local/bin/.cache
+COPY --from=build /usr/src/.cache /usr/local/bin/
 
 WORKDIR /usr/local/bin
 RUN cp -r ./.cache ~/.cache
+RUN
 CMD ["candle-yolo-v8"]
