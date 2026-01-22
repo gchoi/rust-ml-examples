@@ -1,0 +1,30 @@
+services:
+    candle-yolo:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: candle-yolo-v8:latest
+        container_name: candle_yolo_runner
+
+        # Set the working directory to match the Dockerfile
+        working_dir: /usr/local/bin
+
+        volumes:
+            # 1. DATA VOLUME:
+            # Maps a local './data' folder to '/usr/local/bin/data' in the container.
+            # Place your images (e.g., 'car.jpg') in the local 'data' folder.
+            # The application will write output images back to this folder so you can view them.
+            - ./assets:/usr/local/bin/data
+
+            # 2. CACHE VOLUME (Optional):
+            # Persists downloaded HuggingFace/ML models.
+            # This prevents re-downloading models if you destroy/recreate the container.
+            # The Dockerfile moves cache to ~/.cache (which is /root/.cache in Ubuntu).
+            - .cache/huggingface:/root/.cache/huggingface
+
+        # Override the default command to process an image from the mounted volume.
+        # If you remove this line, it will run the default './bike.jpg' baked into the image.
+        command: ["candle-yolo-v8"]
+
+volumes:
+    candle_model_cache:
