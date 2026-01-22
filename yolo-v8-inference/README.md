@@ -60,3 +60,24 @@ $ cargo run --release --features metal -- \
 - `--task`: `detect` for object detection and `pose` for pose estimation.
 - `--legend-size`: the size of the characters to print.
 - `--model`: use a local model file rather than downloading it from the hub.
+
+## Deploy Rust Binary with Docker
+
+### 1. Docker compose
+
+```bash
+$ docker compose up -d
+```
+
+### 2. Run with Docker container
+
+```bash
+$ docker run --rm \
+    -v $(pwd)/assets/bike.jpg:/usr/local/bin/images/bike.jpg \
+    -v $(pwd)/images/:/usr/local/bin/images/ \
+    candle-yolo-v8:latest ./images/bike.jpg
+```
+
+The result image will be saved in [images](./images) folder.
+
+
