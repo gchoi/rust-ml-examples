@@ -39,6 +39,7 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-mamba](./mamba/README.md)
 * [candle-mamba-minimal](./mamba-minimal/README.md)
 * [candle-marian-mt](./marian-mt/README.md)
+* [candle-metavoice](./metavoice/README.md)
 * [candle-onnx](./onnx/README.md)
 * [candle-onnx-llm](./onnx-llm/README.md)
 * [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)
