@@ -1,0 +1,27 @@
+# candle-mnist-training
+
+Training a 2 layer MLP on mnist in Candle.
+
+## Running an example
+
+```bash
+# CUDA
+$ cargo run --features cuda
+
+# Metal
+$ cargo run --features metal
+```
+
+> train-images: [60000, 784]
+>
+> train-labels: [60000]
+> 
+> test-images: [10000, 784]
+> 
+> test-labels: [10000]
+> 
+>    1 train loss:  2.30265 test acc: 68.08%
+> 
+>    2 train loss:  1.50815 test acc: 60.77%
+> 
+> ...

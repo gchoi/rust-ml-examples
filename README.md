@@ -43,6 +43,7 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-mimi](./mimi/README.md)
 * [candle-mistral](./mistral/README.md)
 * [candle-mixtral](./mixtral/README.md)
+* [candle-mnise-training](./mnist-training/README.md)
 * [candle-onnx](./onnx/README.md)
 * [candle-onnx-llm](./onnx-llm/README.md)
 * [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)
