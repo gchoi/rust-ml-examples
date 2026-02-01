@@ -46,6 +46,7 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-mnist-training](./mnist-training/README.md)
 * [candle-mobileclip](./mobileclip/README.md)
 * [candle-mobilnetv4](./mobilenetv4/README.md)
+* [candle-mobileone](./mobileone/README.md)
 * [candle-onnx](./onnx/README.md)
 * [candle-onnx-llm](./onnx-llm/README.md)
 * [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)
