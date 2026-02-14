@@ -50,6 +50,7 @@ This is a collection of Rust ML examples mainly focusing on inference of the ML 
 * [candle-modernbert](./modernbert/README.md)
 * [candle-moondream](./moondream/README.md)
 * [candle-musicgen](./musicgen/README.md)
+* [candle-nvembed_v2](./nvembed_v2/README.md)
 * [candle-onnx](./onnx/README.md)
 * [candle-onnx-llm](./onnx-llm/README.md)
 * [onnx-runtime-rfdetr](./onnx-runtime-rfdetr/README.md)
